@@ -1,0 +1,196 @@
+ .card {
+        border: 1px solid #dee2e6;
+        border-radius: 10px !important;
+        overflow: hidden;
+    }
+
+    .card-header {
+        background: linear-gradient(90deg, #ece5fdff 100%, #e2e3ffff 0%);
+        color: #5f3d86ff; 
+        border-bottom: none;
+        padding: 10px 20px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+    .card-body {
+        background-color: #fafafa;
+    }
+    .card-header h5 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+/* ===== Informasi Pelanggan ===== */
+.card-body .user-avatar {
+    background: #e0f2fe;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px auto;
+}
+
+.card-body .user-avatar i {
+    color: #0369a1;
+}
+
+/* Nama dan email pelanggan */
+.card-body h6 {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.card-body p.text-muted {
+    font-size: 0.9rem;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-warning {
+    background-color: #fbbf24;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #f59e0b;
+}
+
+.btn-info {
+    background-color: #0ea5e9;
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #0284c7;
+}
+
+/* ===== Review Section ===== */
+.card-body .fa-star {
+    transition: transform 0.2s ease;
+}
+
+.card-body .fa-star:hover {
+    transform: scale(1.2);
+}
+.table {
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+.table th {
+        background-color: #f1f3f5;
+        color: #1d1c1cff;
+        font-weight: 600;
+        border-bottom: 2px solid #dee2e6;
+        text-align: center;
+        vertical-align: middle;
+    }
+.table-bordered td, .table-bordered th {
+        border: 1px solid #dee2e6;
+    }
+.table-borderless {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-borderless tr:nth-child(even) {
+    background-color: #f5f3ff;
+}
+
+.table-borderless td {
+    padding: 10px 14px;
+    vertical-align: middle;
+    position: relative;
+    color: #000000;
+}
+
+.table-borderless td:first-child {
+    font-weight: 600;
+    width: 42%;
+    color: #4338ca;
+    background-color: #f9fafb;
+    text-align: left;
+    padding-right: 12px;
+}
+
+.table-borderless td:last-child {
+    text-align: left;
+    font-weight: 500;
+    color: #111827;
+    padding-left: 12px;
+}
+
+/* Garis vertikal dekoratif */
+.table-borderless td::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: 0;
+    width: 3.5px;
+    background: linear-gradient(135deg, #cfcdf5, #e8e7ff);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+    border-radius: 0 6px 6px 0;
+}
+
+.table-borderless td:last-child::after {
+    display: none;
+}
+
+/* Garis antar baris */
+.table-borderless tr + tr td {
+    border-top: 1px dashed #e5e7eb;
+}
+.info-table tr td {
+    border-top: 1px dashed #e5e7eb;
+}
+
+/* ===== Responsive Mobile ===== */
+@media (max-width: 768px) {
+    .table-borderless td:first-child {
+        text-align: left;
+        border-right: none;
+        background: none;
+        color: #4b5563;
+    }
+
+    .table-borderless td::after {
+        display: none;
+    }
+
+    .table-borderless td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        border-top: none;
+    }
+}
+
+.text-center.mb-3 i {
+    position: relative;
+    z-index: 1;
+    color: rgb(74, 42, 218) !important;
+    font-size: 2.5rem !important;
+}
+.btn-action {
+        display: flex;
+        gap: 6px;
+        justify-content: center;
+    }
+
+    .btn-action .btn {
+        padding: 5px 9px;
+    }
